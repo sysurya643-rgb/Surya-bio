@@ -135,3 +135,403 @@ p.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.prev
 </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gandhi ❤️ Sudha | Our Love Story</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: #fff0f4;
+  color: #713747;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  padding: 65px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  background: linear-gradient(135deg,#ffb6c9,#ffe1e9);
+}
+
+h1 {
+  font-size: clamp(38px,8vw,65px);
+  margin: 20px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 19px;
+  line-height: 1.8;
+  max-width: 650px;
+  margin: 15px auto;
+}
+
+.heart {
+  font-size: 65px;
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  50% { transform: scale(1.3); }
+}
+
+button {
+  border: none;
+  padding: 15px 30px;
+  background: #e75480;
+  color: white;
+  border-radius: 30px;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+button:hover {
+  background: #c52c60;
+}
+
+/* Changing photos */
+
+.slideshow {
+  width: min(85vw,350px);
+  height: 420px;
+  position: relative;
+  margin: 25px auto;
+  border: 8px solid white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px #d58b9d;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.story {
+  background: #fff8fa;
+}
+
+.chapter {
+  padding: 50px 15px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery img {
+  width: min(42%,220px);
+  height: 240px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 5px solid white;
+  box-shadow: 0 4px 12px pink;
+}
+
+.final {
+  background: linear-gradient(135deg,#ffcad8,#f7a9bf);
+}
+
+.ending {
+  font-size: 35px;
+  color: #b52f61;
+}
+
+/* Floating hearts */
+
+.floating {
+  position: fixed;
+  bottom: -30px;
+  animation: floatUp 7s linear forwards;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- OPENING PAGE -->
+
+<section class="hero">
+
+  <div class="heart">❤️</div>
+
+  <h1>Gandhi & Sudha</h1>
+
+  <p>
+    A beautiful story of two hearts,
+    one love and countless memories.
+  </p>
+
+  <button onclick="startStory()">
+    Open Our Love Story 💌
+  </button>
+
+</section>
+
+
+<!-- INTRODUCTION -->
+
+<section class="story" id="story">
+
+  <h2>Our Little World 💕</h2>
+
+  <p>
+    Every love story is beautiful,
+    but ours is my favourite.
+
+    You came into my life and made
+    ordinary moments special.
+  </p>
+
+  <div class="heart">💗</div>
+
+</section>
+
+
+<!-- CHAPTER 1 -->
+
+<section class="chapter">
+
+  <h2>Chapter 1 - The Beginning 🌸</h2>
+
+  <p>
+    Somewhere between two people,
+    a beautiful connection began.
+    And that connection became our story.
+  </p>
+
+  <div class="slideshow">
+
+    <img src="ho1.jpg.png" class="slide active" alt="Photo 1">
+
+    <img src="https://github.com/sysurya643-rgb/SudhaNathan/blob/main/WhatsApp%20Image%202026-11-23%20at%205.38.39%20AM.jpeg" class="slide" alt="Photo 2">
+
+    <img src="photo3.jpg" class="slide" alt="Photo 3">
+
+    <img src="photo4.jpg" class="slide" alt="Photo 4">
+
+  </div>
+
+</section>
+
+
+<!-- CHAPTER 2 -->
+
+<section class="chapter story">
+
+  <h2>Chapter 2 - Beautiful Memories 📸</h2>
+
+  <p>
+    Every smile, every conversation,
+    every little moment became
+    a memory worth keeping forever.
+  </p>
+
+  <div class="gallery">
+
+    <img src="photo5.jpg" alt="Memory 1">
+
+    <img src="photo6.jpg" alt="Memory 2">
+
+    <img src="photo7.jpg" alt="Memory 3">
+
+    <img src="photo8.jpg" alt="Memory 4">
+
+  </div>
+
+</section>
+
+
+<!-- CHAPTER 3 -->
+
+<section class="chapter">
+
+  <h2>Chapter 3 - My Favourite Person ❤️</h2>
+
+  <p>
+    You are not just a part of my life.
+    You are one of the most beautiful
+    reasons behind my smile.
+  </p>
+
+  <div class="slideshow">
+
+    <img src="photo9.jpg" class="slide active" alt="Photo 9">
+
+    <img src="photo10.jpg" class="slide" alt="Photo 10">
+
+    <img src="photo11.jpg" class="slide" alt="Photo 11">
+
+  </div>
+
+</section>
+
+
+<!-- CHAPTER 4 -->
+
+<section class="chapter story">
+
+  <h2>Chapter 4 - Forever Together 💍</h2>
+
+  <p>
+    No matter where life takes us,
+    I hope we continue making
+    beautiful memories together.
+  </p>
+
+  <div class="heart">💕</div>
+
+</section>
+
+
+<!-- FINAL SURPRISE -->
+
+<section class="final">
+
+  <div class="heart">❤️</div>
+
+  <h1>Gandhi ❤️ Sudha</h1>
+
+  <p class="ending">
+    Forever & Always
+  </p>
+
+  <p>
+    Thank you for being part of my story.
+
+    If I could choose again,
+    I would still choose you.
+  </p>
+
+  <h2>I Love You! 💕</h2>
+
+  <button onclick="showSurprise()">
+    One Last Surprise 🎁
+  </button>
+
+  <p id="surprise"></p>
+
+</section>
+
+
+<script>
+
+// Smooth scrolling
+
+function startStory() {
+
+  document.getElementById("story").scrollIntoView({
+    behavior: "smooth"
+  });
+
+}
+
+
+// Automatic changing photos
+
+document.querySelectorAll(".slideshow").forEach(slideshow => {
+
+  const slides = slideshow.querySelectorAll(".slide");
+
+  let currentSlide = 0;
+
+  setInterval(() => {
+
+    slides[currentSlide].classList.remove("active");
+
+    currentSlide = (currentSlide + 1) % slides.length;
+
+    slides[currentSlide].classList.add("active");
+
+  }, 3000);
+
+});
+
+
+// Surprise message
+
+function showSurprise() {
+
+  document.getElementById("surprise").innerHTML =
+    "You are my today, my tomorrow and my forever! ❤️";
+
+}
+
+
+// Floating hearts animation
+
+function createHeart() {
+
+  const heart = document.createElement("div");
+
+  heart.className = "floating";
+
+  heart.innerHTML = "❤️";
+
+  heart.style.left = Math.random() * 100 + "vw";
+
+  heart.style.fontSize =
+    (15 + Math.random() * 25) + "px";
+
+  heart.style.animationDuration =
+    (4 + Math.random() * 5) + "s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 9000);
+
+}
+
+setInterval(createHeart, 500);
+
+</script>
+
+</body>
+</html>
