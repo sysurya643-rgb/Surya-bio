@@ -50,7 +50,7 @@ a:focus-visible,.photo:focus-visible{outline:3px solid var(--accent2);outline-of
   <div class="photo" id="photo" role="button" tabindex="0" aria-label="Tap to open a message">🌟</div>
   <p class="tap">Tap the photo</p>
   <p class="reveal" id="msg">This is the story of how I became who I am. Every chapter, every person and every prayer that brought me here. Thank you for reading it with me.</p>
-  <h1>[surya Shenbagam]’s Story</h1>
+  <h1>Surya Shenbagam’s Story</h1>
   <p class="lead">From the day I was born till today.</p>
   <a class="down" href="#story">↓ scroll down for my story ↓</a>
 </section>
@@ -64,11 +64,13 @@ a:focus-visible,.photo:focus-visible{outline:3px solid var(--accent2);outline-of
   <div class="timeline">
 
     <article class="ch">
-      <div class="year">[Year of birth]</div>
+      <div class="year">30 Juy 1995</div>
       <h2>The Day I Was Born</h2>
       <div class="strip"><div class="ph">Add baby photo</div><div class="ph">Add family photo</div></div>
-      <p>I was born on [date] in [city/hospital], to [mother’s name] and [father’s name]. [Write what your family tells you about that day: the weather, who was waiting outside, how you got your name.]</p>
-      <blockquote>“[A line your mom or dad always says about the day you arrived.]”</blockquote>
+      <p>I was born on **30th July** as the third child in my family, with two loving elder brothers eagerly waiting to welcome me. I was the only princess of the family, and my parents were excited to see me for the first time.
+My name, **Surya Gandhi**, has a beautiful meaning. Surya is my aunt's name, and Gandhimathi was my grandmother's name. My family combined these names to give me this special identity. I love to think of myself as a sunflower, spreading happiness and brightness wherever I go.
+My birthday is also the day my grandmother passed away, making it a day filled with both happiness and memories. ❤️</p>
+      <blockquote>“From the moment you arrived, our family was complete. You were our little princess, bringing double happiness and endless love into our lives."</blockquote>
     </article>
 
     <article class="ch">
@@ -119,7 +121,7 @@ a:focus-visible,.photo:focus-visible{outline:3px solid var(--accent2);outline-of
 var p=document.getElementById('photo'),m=document.getElementById('msg');
 function pop(e){
   m.classList.add('on');
-  var r=p.getBoundingClientRect(),em=['💜','✨','🎉','🌟','💛'];
+  var r=p.getBoundingClientRect(),em=['💜','✨','🎉','🌟','💛','💌','❤️];
   for(var i=0;i<10;i++){
     var h=document.createElement('span');h.className='heart';
     h.textContent=em[i%em.length];
@@ -508,7 +510,7 @@ function createHeart() {
 
   heart.className = "floating";
 
-  heart.innerHTML = "❤️❤️";
+  heart.innerHTML = "❤️";
 
   heart.style.left = Math.random() * 100 + "vw";
 
